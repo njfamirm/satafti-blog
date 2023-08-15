@@ -1,12 +1,12 @@
 {
   "main": [
     {
-      "label": "Home",
+      "label": "/home",
       "link": "/"
     },
     {
-      "label": "Post",
-      "link": "/post"
+      "label": "/post",
+      "link": "/post/"
     },
     {
       "label": "Github",
