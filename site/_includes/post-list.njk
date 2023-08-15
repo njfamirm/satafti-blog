@@ -1,34 +1,34 @@
-<div class="bg-gray-100">
+<div class="bg-background">
   <div class="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
     <div class="text-center">
-      <div class="text-sm uppercase font-bold tracking-wider mb-1 text-yellow-700">
-        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="hi-solid hi-terminal inline-block w-10 h-10" height="48" viewBox="0 -960 960 960" width="48"><path d="M225-80q-44 0-74.5-30.5T120-185v-135h120v-560h600v386q-16 0-31 6t-29 17v-349H300v500h328l-60 60H180v75q0 19 13 32t31 13h296v60H225Zm355 0v-107l176-176 28 28-164 164v51h51l164-164 28 28L687-80H580Zm283-176L756-363l61-61q9-9 21-9t21 9l65 65q9 9 9 21t-9 21l-61 61ZM360-640v-60h360v60H360Zm0 120v-60h360v60H360Zm160 380H180h340Z"/></svg>
+      <div class="text-sm uppercase font-bold tracking-wider mb-1 text-neutral">
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="hi-solid hi-terminal inline-block w-40 h-40" height="48" viewBox="0 -960 960 960" width="48"><path d="M225-80q-44 0-74.5-30.5T120-185v-135h120v-560h600v386q-16 0-31 6t-29 17v-349H300v500h328l-60 60H180v75q0 19 13 32t31 13h296v60H225Zm355 0v-107l176-176 28 28-164 164v51h51l164-164 28 28L687-80H580Zm283-176L756-363l61-61q9-9 21-9t21 9l65 65q9 9 9 21t-9 21l-61 61ZM360-640v-60h360v60H360Zm0 120v-60h360v60H360Zm160 380H180h340Z"/></svg>
       </div>
-      <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-primary">
             My posts
           </h2>
-      <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto">
+      <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-secondary lg:w-2/3 mx-auto">
             See my latest posts thats I write about programming, tech, and more.
           </h3>
     </div>
     <div class="flex flex-row flex-wrap justify-center gap-2 md:gap-8 w-full">
       {% for post in medium.posts %}
         <a href="{{ post.link }}" target="_blank" class="py-5 cursor-pointer lg:w-2/5 medium:w-2/5 group">
-          <div class="p-2 bg-white rounded-lg mb-2 hover:bg-yellow-500 transition">
+          <div class="p-1 bg-onBackground rounded-lg mb-2 group-hover:bg-primary transition">
             <img src="{{ post.cover }}" alt="Preview Feature Image" class="rounded-lg"/>
           </div>
-          <h4 class="text-lg font-bold mb-2 text-gray-700 group-hover:text-gray-950 group-hover:underline">
+          <h4 class="text-lg font-bold mb-2 text-neutral group-hover:text-primary group-hover:underline">
             {{ post.title }}
-            <span class="text-blue-800 font-mono">on medium</span>
+            <span class="text-tertiary font-mono">on medium</span>
           </h4>
-          <p class="leading-relaxed text-gray-600 mb-3">
+          <p class="leading-relaxed text-secondary mb-3">
             {{ post.description }}
           </p>
 
           <div class="flex flex-row flex-wrap w-full gap-1 text-center">
             {% for tag in post.tags %}
             <div>
-              <div class="font-semibold inline-flex px-2 py-1 leading-4 text-sm rounded text-yellow-600 bg-yellow-100">{{ tag }}</div>
+              <div class="font-semibold inline-flex px-2 py-1 leading-4 text-sm rounded text-onTertiary bg-tertiary">{{ tag }}</div>
             </div>
             {% endfor %}
           </div>
