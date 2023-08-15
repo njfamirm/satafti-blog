@@ -2,4 +2,69 @@
 layout: base.njk
 title: Home
 ---
-<h1>My personal blog</h1>
+<div id="page-container" class="flex flex-col mx-auto w-full min-h-screen bg-gray-100">
+  <main id="page-content" class="flex flex-auto flex-col max-w-full">
+    <div class="bg-white overflow-hidden">
+      <div class="flex flex-col lg:flex-row-reverse space-y-16 lg:space-y-0 text-center lg:text-left container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+        <div class="lg:w-1/2 lg:flex lg:items-center">
+          <div>
+            <div class="font-semibold inline-flex px-2 py-1 leading-4 mb-2 text-sm rounded text-blue-700 bg-blue-200">
+              Wellcome to my new website!
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800">
+              Junior full stack developer
+            </h2>
+            <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600">
+              Adventurer, reasercher, writer, and more.
+            </h3>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-2 pt-10 pb-16">
+              <a href="https://medium.com/@njfamirm" target="_blank" class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-yellow-700 bg-yellow-700 text-white hover:text-white hover:bg-yellow-800 hover:border-yellow-800 focus:ring focus:ring-yellow-500 focus:ring-opacity-50 active:bg-yellow-700 active:border-yellow-700">
+                <span>See my medium profile</span>
+                <svg fill="currentColor" class="opacity-50 hi-solid hi-arrow-right inline-block w-5 h-5" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h279v60H180v600h600v-279h60v279q0 24-18 42t-42 18H180Zm202-219-42-43 398-398H519v-60h321v321h-60v-218L382-339Z"/></svg>
+              </a>
+              <a href="https://twitter.com/njfamirm" target="_blank" class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-gray-200 bg-gray-200 text-gray-700 hover:text-gray-700 hover:bg-gray-300 hover:border-gray-300 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-gray-200 active:border-gray-200">
+                <span>follow me on twitter</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="lg:mr-16 lg:flex lg:justify-center lg:items-center">
+          <div class="lg:w-96 relative">
+            <img src="/img/main.jpg" alt="Hero Image" class="relative rounded-lg mx-auto shadow-lg"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-100">
+      <div class="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+        <div class="text-center">
+          <div class="text-sm uppercase font-bold tracking-wider mb-1 text-yellow-700">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="hi-solid hi-terminal inline-block w-10 h-10" height="48" viewBox="0 -960 960 960" width="48"><path d="M225-80q-44 0-74.5-30.5T120-185v-135h120v-560h600v386q-16 0-31 6t-29 17v-349H300v500h328l-60 60H180v75q0 19 13 32t31 13h296v60H225Zm355 0v-107l176-176 28 28-164 164v51h51l164-164 28 28L687-80H580Zm283-176L756-363l61-61q9-9 21-9t21 9l65 65q9 9 9 21t-9 21l-61 61ZM360-640v-60h360v60H360Zm0 120v-60h360v60H360Zm160 380H180h340Z"/></svg>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800">
+            My posts
+          </h2>
+          <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto">
+            See my latest posts thats I write about programming, tech, and more.
+          </h3>
+        </div>
+        <div class="flex flex-row flex-wrap justify-center gap-2 md:gap-8 w-full">
+          {% for post in medium.posts %}
+            <a href="{{ post.link }}" target="_blank" class="py-5 cursor-pointer lg:w-2/5 medium:w-2/5 group">
+              <div class="p-2 bg-white rounded-lg mb-2 hover:bg-yellow-500 transition">
+                <img src="{{ post.cover }}" alt="Preview Feature Image" class="rounded-lg"/>
+              </div>
+              <h4 class="text-lg font-bold mb-2 text-gray-700 group-hover:text-gray-950 group-hover:underline">
+                {{ post.title }} <span class="text-blue-800 font-mono">on medium</span>
+              </h4>
+              <p class="leading-relaxed text-gray-600 mb-3">
+                {{ post.description }}
+              </p>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
