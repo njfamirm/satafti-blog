@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ locale }}" dir="{{ dir }}" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-{% include "meta.njk" %}
-<style>
-  body {
-    padding: 0;
-  }
-</style>
-</head>
-<body>
-  {% include "header.njk" %}
-  {% include "nav.njk" %}
+  <head>
+    {% include "meta.njk" %}
+    <style>
+      {% set css %}
+      {% include "../_css/main.css" %}
+      {% endset %}
+      {{css | postcss | safe}}
+    </style>
+  </head>
+  <body>
+    {% include "header.njk" %}
+    {% include "nav.njk" %}
 
-  {{ content | safe }}
+    {{ content | safe }}
 
-  {% include "footer.njk" %}
-</body>
+    {% include "footer.njk" %}
+  </body>
 </html>

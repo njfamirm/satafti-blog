@@ -1,12 +1,16 @@
 {
   "main": [
     {
-      "name": "Home",
+      "label": "/home",
       "link": "/"
     },
     {
-      "name": "About us",
-      "link": "/about"
+      "label": "/post",
+      "link": "/post/"
+    },
+    {
+      "label": "Github",
+      "link": "https://github.com/njfamirm"
     }
   ]
 }
