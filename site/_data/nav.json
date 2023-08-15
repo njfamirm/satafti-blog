@@ -5,18 +5,12 @@
       "link": "/"
     },
     {
-      "label": "About us",
-      "link": "/about"
-    }
-  ],
-  "footer": [
-    {
-      "label": "Home",
-      "link": "/"
+      "label": "Post",
+      "link": "/post"
     },
     {
-      "label": "About us",
-      "link": "/about"
+      "label": "Github",
+      "link": "https://github.com/njfamirm"
     }
   ]
 }
