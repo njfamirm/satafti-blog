@@ -1,11 +1,21 @@
 {
   "main": [
     {
-      "name": "Home",
+      "label": "Home",
       "link": "/"
     },
     {
-      "name": "About us",
+      "label": "About us",
+      "link": "/about"
+    }
+  ],
+  "footer": [
+    {
+      "label": "Home",
+      "link": "/"
+    },
+    {
+      "label": "About us",
       "link": "/about"
     }
   ]
