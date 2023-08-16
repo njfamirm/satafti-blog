@@ -5,10 +5,6 @@ name: Publish Alwatr Containers
 on:
   workflow_dispatch:
 
-  push:
-    branches:
-      - main
-
   pull_request:
     paths:
       - 'cloud/Dockerfile'
@@ -29,9 +25,9 @@ jobs:
       fail-fast: true
       matrix:
         include:
-          - image: 12fy
-            description: Alwatr 12fy website.
-            siteUrl: https://12fy.alwatr.ir
+          - image: njfamirm-ir
+            description: njfamirm's personal blog.
+            siteUrl: https://njfamirm.ir
 
     permissions:
       contents: read
