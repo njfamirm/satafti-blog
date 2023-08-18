@@ -1,6 +1,6 @@
 .post-container {
   img {
-    @apply my-8 dark:brightness-90 rounded-lg m-auto;
+    @apply my-8 dark:brightness-90 rounded-lg m-auto drop-shadow-2xl;
   }
 
   article {
