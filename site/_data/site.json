@@ -7,7 +7,7 @@
   "dir": "ltr",
   "theme": {
     "dark": "#9c82db",
-    "light": "##684fa4",
+    "light": "#684fa4",
     "splashBackground": "#ffff"
   }
 }
