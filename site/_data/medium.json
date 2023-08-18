@@ -11,7 +11,7 @@
       "title": "A Step-by-Step Guide to Self-Hosting Decap CMS",
       "description": "Simple guide to hosting Decap CMS backend on your server.",
       "cover": "/img/medium/decap-cover.jpg",
-      "link": "https://medium.com/@njfamirm/a-step-by-step-guide-to-self-hosting-decap-cms-5425ab44abca",
+      "link": "/post/self-hosting-decap-cms",
       "tags": ["decap-cms", "cms", "self-hosting", "docker"]
     }
   ]
