@@ -20,7 +20,6 @@ Let's start
 To create an OAuth application, you will need to:
 
 1. Go to the [Github OAuth settings](https://github.com/settings/applications/new) from `Settings > Developer Settings > OAuth Apps > Generate New`
-
 2. In the Application name field, enter a name for your application.
 3. In the Homepage URL field, enter the URL of your website.
 4. In the Authorization callback URL field, enter the URL that will be redirected to after authentication. This URL will depend on your Decap CMS backend. In this post, we will set the callback URL to _**${siteURL}/callback**_.
@@ -67,8 +66,6 @@ Then add admin html and javascript/typescript file like below:
 import CMS from "netlify-cms-app";
 
 CMS.init();
-
-const x = 2;
 ```
 
 > If you're using Hugo, to add an admin panel to the `/admin` address, you can add `admin/_index.md` to the `content` folder and also `_default/admin.html` to `layouts`.
@@ -108,7 +105,7 @@ services:
       - ALWATR_DEBUG=${CMS_BACKEND_DEBUG-}
 ```
 
-## Setup `admin.yml` File
+## Setup Admin config
 
 Amazing, almost all thing is done, just need to add Decap-CMS into the admin `config.yml` file like this:
 
