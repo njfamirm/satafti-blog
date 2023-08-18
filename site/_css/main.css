@@ -1,6 +1,7 @@
 @import "@alwatr/style/main.css";
 @import "@alwatr/style/palettes/h300.css";
 @import "./syntax-highlighter.css";
+@import "./post.css";
 
 body {
   @apply font-system p-0;

@@ -1,17 +1,17 @@
 ---
 layout: base.njk
 ---
-<img src="{{ postImg }}" alt="Featured Image of blog post" class="w-screen"/>
 
-<div class="container xl:max-w-7xl lg:px-8 px-20 m-auto">
+<div class="post-container container xl:max-w-7xl lg:px-8 px-20 m-auto">
   <div class="text-center">
-    <h2 style="letter-spacing: -0.03em" class="font-extrabold mx-4 my-8 text-[4em] leading-none">
+    <h2 style="letter-spacing: -0.03em" class="font-extrabold mx-4 my-8 text-[4.5em] leading-none text-onBackground">
       {{ postTitle }}
     </h2>
-    <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-tertiary lg:w-2/3 mx-auto">
+    <p class="text-lg md:text-xl md:leading-relaxed font-medium text-tertiary lg:w-2/3 mx-auto">
       <span class="font-semibold">{{ page.date.toUTCString() }}</span> · 8 min read
-      </h3>
+    </p>
   </div>
+  <img src="{{ postImg }}" alt="Featured Image of blog post" />
   <article class="prose prose-indigo prose-lg mx-16">
     {{ content | safe }}
   </article>

@@ -3,7 +3,7 @@ pre[class*="language-"] {
 	color: rgb(var(--sys-color-on-surface));
 	background: none;
 	text-shadow: 0 0.5px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	@apply font-mono;
 	font-size: 1em;
 	text-align: left;
 	white-space: pre;
