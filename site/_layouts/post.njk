@@ -11,8 +11,8 @@ layout: base.njk
       <span class="font-semibold">{{ page.date.toUTCString() }}</span> · 8 min read
     </p>
   </div>
-  <img src="{{ postImg }}" alt="Featured Image of blog post" />
   <article class="prose prose-indigo prose-lg mx-16">
+    <img src="{{ postImg }}" alt="Featured Image of blog post" />
     {{ content | safe }}
   </article>
 </div>
