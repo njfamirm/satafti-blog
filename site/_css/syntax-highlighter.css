@@ -32,7 +32,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background-color: rgb(var(--sys-color-surface-container));
+  @apply dark:brightness-90 bg-surfaceContainer;
 }
 
 /* Inline code */

@@ -1,11 +1,15 @@
 .post-container {
   img {
-    @apply rounded-[10px] py-8;
+    @apply my-8 dark:brightness-90 rounded-lg;
   }
 
   article {
     h2 {
       @apply text-4xl font-bold text-primary mt-10 mb-5;
+    }
+
+    code:not(pre code) {
+      @apply italic brightness-75 text-lg rounded-sm font-mono selection:p-0;
     }
 
     p {
@@ -15,9 +19,6 @@
         @apply text-secondary hover:brightness-50 font-bold;
       }
 
-      code {
-        @apply italic brightness-75 text-lg rounded-sm font-mono selection:p-0;
-      }
     }
   }
 }
