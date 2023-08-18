@@ -4,7 +4,7 @@
       "title": "Separating Commits in Git, A Guide to Streamlining Your Workflow",
       "description": "Explain git-separate for a better experience when using trunk-based deployment.",
       "cover": "/img/medium/git-separate-cover.jpg",
-      "link": "https://medium.com/dev-genius/git-separate-26267193d5f5",
+      "link": "/post/git-separate",
       "tags": ["git"]
     },
     {
