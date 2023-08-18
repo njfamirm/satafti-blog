@@ -2,6 +2,7 @@ const { minifyHtml } = require("./config/minify-html");
 const { postcssProcess } = require("./config/postcss.js");
 const { esbuild } = require("./config/esbuild.js");
 const { date } = require("./config/date.js");
+const timeToRead = require('eleventy-plugin-time-to-read');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 /**
@@ -18,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", esbuild);
 
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(timeToRead);
 
   eleventyConfig.addFilter("humanReadableDate", date);
   eleventyConfig.addAsyncFilter("postcss", postcssProcess);
