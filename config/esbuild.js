@@ -5,7 +5,7 @@ const debugMode = env.NODE_ENV !== "production";
 async function esbuild() {
   await build({
     entryPoints: [`site/_js/main.ts`],
-    outdir: "dist/js/",
+    outdir: "dist/",
     logLevel: "info",
     platform: "browser",
     target: "es2018",
