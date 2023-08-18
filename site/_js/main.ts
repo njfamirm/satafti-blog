@@ -1,1 +1,1 @@
-
+import "./quick-link.js"
