@@ -5,7 +5,7 @@ postTitle: A Step-by-Step Guide to Self-Hosting Decap CMS
 postImg: "/img/post/self-hosting-decap-cms/cover.jpg"
 description: Simple guide to host Decap CMS backend on your own server.
 tags: ["decap-cms", "docker", "self-hosting", "typescript"]
-date: git Last Modified
+date: git Created
 ---
 
 Hi everyone!

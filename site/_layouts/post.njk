@@ -7,8 +7,8 @@ layout: base.njk
     <h2 style="letter-spacing: -0.03em" class="font-extrabold mx-4 my-8 text-[4.5em] leading-none text-onBackground">
       {{ postTitle }}
     </h2>
-    <p class="text-lg md:text-xl md:leading-relaxed font-medium text-tertiary lg:w-2/3 mx-auto">
-      <span class="font-semibold">{{ page.date.toUTCString() }}</span> · 8 min read
+    <p class="text-tertiary lg:w-2/3 mx-auto">
+      Published at: {{ page.date | humanReadableDate }} · {{ content | timeToRead }} read
     </p>
   </div>
   <article class="prose prose-indigo prose-lg mx-16">
