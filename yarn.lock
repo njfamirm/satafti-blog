@@ -24,6 +24,13 @@
     ssri "^8.0.1"
     ws "^8.13.0"
 
+"@11ty/eleventy-plugin-syntaxhighlight@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-5.0.0.tgz#dc1c43427624a5326f5dda0fe8fbe3805225fdb8"
+  integrity sha512-y9BUmP1GofmbJgxM1+ky/UpFCpD8JSOeLeKItUs0WApgnrHk9haHziW7lS86lbArX5SiCVo4zTTw9x53gvRCaA==
+  dependencies:
+    prismjs "^1.29.0"
+
 "@11ty/eleventy-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-utils/-/eleventy-utils-1.0.1.tgz#e89dc94b475284e5003525db5078663c5087db82"
@@ -1505,6 +1512,11 @@ electron-to-chromium@^1.4.477:
   version "1.4.490"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.490.tgz#d99286f6e915667fa18ea4554def1aa60eb4d5f1"
   integrity sha512-6s7NVJz+sATdYnIwhdshx/N/9O6rvMxmhVoDSDFdj6iA45gHR8EQje70+RYsF4GeB+k0IeNSBnP7yG9ZXJFr7A==
+
+eleventy-plugin-time-to-read@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-time-to-read/-/eleventy-plugin-time-to-read-1.3.0.tgz#17701132491b522fa013fcc103a24eafe3b56082"
+  integrity sha512-EefxYZJviQbClwoQ+pXW0YsVoi3gzXJ3prJoOLO1g3n5dM17KyZh81/yyq5Inrdc2pxBz3CXsyo21kk43gK/Gg==
 
 encodeurl@~1.0.2:
   version "1.0.2"
@@ -3298,6 +3310,11 @@ printable-characters@^1.0.42:
   version "1.0.42"
   resolved "https://registry.yarnpkg.com/printable-characters/-/printable-characters-1.0.42.tgz#3f18e977a9bd8eb37fcc4ff5659d7be90868b3d8"
   integrity sha512-dKp+C4iXWK4vVYZmYSd0KBH5F/h1HoZRsbJ82AVKRO3PEo8L4lBS/vLwhVtpwwuYcoIsVY+1JYKR268yn480uQ==
+
+prismjs@^1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
+  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
 promise-each@^2.2.0:
   version "2.2.0"

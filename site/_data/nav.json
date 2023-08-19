@@ -1,11 +1,11 @@
 {
   "main": [
     {
-      "label": "/home",
+      "label": "Home",
       "link": "/"
     },
     {
-      "label": "/post",
+      "label": "Post",
       "link": "/post/"
     }
   ]

@@ -1,6 +1,9 @@
-const { minifyHtml } = require('./config/minify-html');
-const { postcssProcess } = require('./config/postcss.js');
-const { esbuild } = require('./config/esbuild.js');
+const { minifyHtml } = require("./config/minify-html");
+const { postcssProcess } = require("./config/postcss.js");
+const { esbuild } = require("./config/esbuild.js");
+const { date } = require("./config/date.js");
+const timeToRead = require('eleventy-plugin-time-to-read');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 /**
  * 11ty configuration.
@@ -9,24 +12,31 @@ const { esbuild } = require('./config/esbuild.js');
  */
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
-    'assets': '/',
-    'assets/img/meta/favicon.ico': '/favicon.ico',
+    assets: "/",
+    "assets/img/meta/favicon.ico": "/favicon.ico",
   });
 
-  eleventyConfig.on('eleventy.before', esbuild)
-  eleventyConfig.addAsyncFilter('postcss', postcssProcess);
-  eleventyConfig.addTransform('minifyHtml', minifyHtml);
+  eleventyConfig.on("eleventy.before", esbuild);
+
+  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(timeToRead);
+
+  eleventyConfig.addFilter("humanReadableDate", date);
+  eleventyConfig.addAsyncFilter("postcss", postcssProcess);
+
+  eleventyConfig.addTransform("minifyHtml", minifyHtml);
+
+  eleventyConfig.addWatchTarget("site");
 
   return {
-    markdownTemplateEngine: 'njk',
-    htmlTemplateEngine: 'njk',
-    templateFormats: ['njk', '11ty.js'],
+    htmlTemplateEngine: "njk",
+    templateFormats: ["njk", "11ty.js", "md"],
     dir: {
-      input: 'site',
-      output: 'dist',
-      includes: '_includes',
-      data: '_data',
-      layouts: '_layouts',
+      input: "site",
+      output: "dist",
+      includes: "_includes",
+      data: "_data",
+      layouts: "_layouts",
     },
   };
 };
