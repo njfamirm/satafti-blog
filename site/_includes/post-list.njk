@@ -11,20 +11,20 @@
     </h3>
   </div>
   <div class="flex flex-row flex-wrap justify-center gap-2 md:gap-8 w-full">
-    {% for post in medium.posts %}
-      <a href="{{ post.link }}" class="py-5 cursor-pointer lg:w-2/5 medium:w-2/5 group">
-        <div class="p-1 bg-onBackground rounded-lg mb-2 group-hover:bg-primary transition">
-          <img src="{{ post.cover }}" alt="Preview Feature Image" class="rounded-lg"/>
+    {% for post in collections.post %}
+      <a href="{{ post.url }}" class="py-5 cursor-pointer lg:w-2/5 medium:w-2/5 group">
+        <div class="p-[1px] bg-onBackground rounded-lg mb-2 transition">
+          <img src="{{ post.data.postCover }}" alt="Preview Feature Image" class="rounded-lg"/>
         </div>
         <h4 class="text-lg font-bold mb-2 text-neutral group-hover:text-primary group-hover:underline">
-          {{ post.title }}
+          {{ post.data.title }}
         </h4>
         <p class="leading-relaxed text-secondary mb-3">
-          {{ post.description }}
+          {{ post.data.description }}
         </p>
 
         <div class="flex flex-row flex-wrap w-full gap-1 text-center">
-          {% for tag in post.tags %}
+          {% for tag in post.data.postTags %}
             <div>
               <div class="font-semibold inline-flex px-2 py-1 leading-4 text-sm rounded text-onTertiary bg-tertiary">{{ tag }}</div>
             </div>
