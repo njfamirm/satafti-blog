@@ -18,6 +18,8 @@
     "cssnano",
     "Decap",
     "tailwindcss",
-    "treeshake"
+    "treeshake",
+    "tailwindcss",
+    "esbuild"
   ]
 }

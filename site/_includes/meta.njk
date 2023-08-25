@@ -1,6 +1,6 @@
 {% set pageTitle = title + ' - ' + site.title %}
 
-{% set currentUrl = env.SITE_URL + page.url %}
+{% set currentUrl = env.siteUrl + page.url %}
 
 {% if not description %}
   {% set description = site.description %}
@@ -11,9 +11,10 @@
 
 <meta charset="utf-8" />
 
-<link rel="preload" as="script" href="/main.js" fetchpriority="high" crossorigin />
-{# <link rel="preload" as="style" href="main.css" fetchpriority="high" />
-<link media="print" rel="stylesheet" href="main.css" onload="this.media='all';this.onload=null;"/> #}
+<link rel="preload" as="script" href="/script.js?v={{ git.shortSha }}" fetchpriority="high" />
+
+<link rel="preload" as="style" href="/style.css?v={{ git.shortSha }}" fetchpriority="high" />
+<link media="print" rel="stylesheet" href="/style.css?v={{ git.shortSha }}" onload="this.media='all';this.onload=null;"/>
 
 <link rel="manifest" href="/manifest.webmanifest" />
 
