@@ -2,7 +2,8 @@
 layout: post.njk
 title: "A Step-by-Step Guide to Self-Hosting Decap CMS"
 postTitle: A Step-by-Step Guide to Self-Hosting Decap CMS
-postCover: "/img/post/self-hosting-decap-cms/cover.jpg"
+postCover: "assets/img/post/self-hosting-decap-cms/cover.jpg"
+postCoverAlt: "Decap CMS logo with text of how can self hosting them."
 description: Simple guide to host Decap CMS backend on your own server.
 postTags: 
   - decap-cms
@@ -30,11 +31,11 @@ To create an OAuth application, you will need to:
 
 Once you have entered all of the required information, click Create Application.
 
-![screenshot from the Github OAuth app settings page](/img/post/self-hosting-decap-cms/create-oauth-screenshot.jpg "Create Oauth app on Github for Decap CMS")
+{% image "assets/img/post/self-hosting-decap-cms/create-oauth-screenshot.jpg", "Create Oauth app on Github for Decap CMS" %}
 
 Then when the application is created, save the `Client ID` and create new `Client secrets` for use in the last step.
 
-![screenshot from the Github OAuth app client ID and secret ID](/img/post/self-hosting-decap-cms/oauth-setting-screenshot.jpg "Create client ID and secret ID in Github OAuth app")
+{% image "assets/img/post/self-hosting-decap-cms/oauth-setting-screenshot.jpg", "Create client ID and secret ID in Github OAuth app" %}
 
 ### Add CMS to the Website
 
