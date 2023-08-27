@@ -2,7 +2,8 @@ const { minifyHtml } = require("./config/minify-html");
 const { postcssProcess } = require("./config/postcss.js");
 const { esbuildTransform } = require("./config/esbuild.js");
 const { date } = require("./config/date.js");
-const timeToRead = require('eleventy-plugin-time-to-read');
+const { imageShortcode } = require("./shortcode/image.js");
+const timeToRead = require("eleventy-plugin-time-to-read");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 /**
@@ -20,15 +21,17 @@ module.exports = function (eleventyConfig) {
 
   // eleventyConfig.on("eleventy.before", esbuildBuild);
 
+  eleventyConfig.addShortcode("image", imageShortcode);
+
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead);
 
   eleventyConfig.addFilter("humanReadableDate", date);
   eleventyConfig.addAsyncFilter("postcss", postcssProcess);
-  eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
+  eleventyConfig.addAsyncFilter("esbuild", esbuildTransform);
 
   eleventyConfig.addTransform("minifyHtml", minifyHtml);
-  eleventyConfig.addTransform('trimer', (content) => content.trim());
+  eleventyConfig.addTransform("trimer", (content) => content.trim());
 
   return {
     htmlTemplateEngine: "njk",

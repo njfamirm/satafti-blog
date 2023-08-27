@@ -21,12 +21,13 @@
     "clean": "rm -rf dist",
     "build": "eleventy",
     "build:production": "siteUrl='https://njfamirm.ir' NODE_ENV='production' MY_ENVIRONMENT=production run-s clean build",
-    "build:staging": "siteUrl='https://njfamirm.ir' NODE_ENV='production' MY_ENVIRONMENT=production noIndex=1 run-s clean build",
+    "build:staging": "siteUrl='https://beta.njfamirm.ir' NODE_ENV='production' MY_ENVIRONMENT=production noIndex=1 run-s clean build",
     "deploy:production": "wrangler pages deploy --branch=main --project-name=njfamirm-ir dist",
     "deploy:staging": "wrangler pages deploy --branch=main --project-name=beta-njfamirm-ir dist"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@swc/html": "^0.0.28",
     "@types/quicklink": "^2.3.0",
