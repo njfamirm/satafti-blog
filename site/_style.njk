@@ -1,0 +1,12 @@
+---
+permalink: /style.css
+eleventyExcludeFromCollections: true
+---
+
+{% set css %}
+  {% include "./_css/main.css" %}
+  {% include "./_css/vazirmatn-font.css" %}
+  {% include "./_css/post.css" %}
+  {% include "./_css/syntax-highlighter.css" %}
+{% endset %}
+{{ css | postcss | safe }}

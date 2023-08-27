@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ locale }}" dir="{{ dir }}" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="{{ site.locale }}" dir="{{ site.dir }}">
   <head>
     {% include "meta.njk" %}
-    <style>
-      {% set css %}
-      {% include "../_css/main.css" %}
-      {% endset %}
-      {{css | postcss | safe}}
-    </style>
+    <link rel="stylesheet" href="/style.css?v={{ git.shortSha }}">
   </head>
-  <body class="bg-background text-lg">
+
+  <body>
     {% include "header.njk" %}
     {% include "nav.njk" %}
-
     {{ content | safe }}
-
     {% include "footer.njk" %}
-  </body>
 
-  <script src="/main.js"></script>
+    <script src="/script.js?v={{ git.shortSha }}"></script>
+  </body>
 </html>
