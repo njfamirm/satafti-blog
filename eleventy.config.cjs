@@ -4,6 +4,7 @@ const { esbuildTransform } = require("./config/esbuild.js");
 const { date } = require("./config/date.js");
 const { imageShortcode } = require("./shortcode/image.js");
 const { editOnGitHub } = require("./shortcode/edit-on-github.js");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require("eleventy-plugin-time-to-read");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
@@ -28,6 +29,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead);
+  eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addFilter("humanReadableDate", date);
   eleventyConfig.addAsyncFilter("postcss", postcssProcess);
