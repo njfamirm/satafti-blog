@@ -1,6 +1,6 @@
 .post-container {
   img {
-    @apply my-8 dark:brightness-90 rounded-lg m-auto drop-shadow-2xl;
+    @apply my-8 dark:brightness-90 rounded-lg m-auto drop-shadow-2xl select-none;
   }
 
   article {
@@ -12,13 +12,12 @@
       @apply italic brightness-75 text-lg rounded-sm font-mono selection:p-0;
     }
 
+    a {
+      @apply text-tertiary hover:brightness-50 font-bold;
+    }
+
     p {
       @apply leading-7 text-xl my-5;
-
-      a {
-        @apply text-secondary hover:brightness-50 font-bold;
-      }
-
     }
   }
 }
