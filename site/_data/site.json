@@ -1,8 +1,8 @@
 {
   "title": "njfamirm",
   "description": "S. Amir Mohammad Najafi personal blog and portfolio.",
-  "author": "S. Amir Mohammad Najafi",
-  "defaultSocialImage": "/img/meta/social.jpg",
+  "author": ["S. Amir Mohammad Najafi"],
+  "defaultSocialImage": "img/meta/social.png",
   "locale": "en",
   "dir": "ltr",
   "theme": {
