@@ -3,6 +3,7 @@ const { postcssProcess } = require("./config/postcss.js");
 const { esbuildTransform } = require("./config/esbuild.js");
 const { date } = require("./config/date.js");
 const { imageShortcode } = require("./shortcode/image.js");
+const { editOnGitHub } = require("./shortcode/edit-on-github.js");
 const timeToRead = require("eleventy-plugin-time-to-read");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
@@ -23,6 +24,7 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.on("eleventy.before", esbuildBuild);
 
   eleventyConfig.addShortcode("image", imageShortcode);
+  eleventyConfig.addShortcode("editOnGitHub", editOnGitHub);
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead);

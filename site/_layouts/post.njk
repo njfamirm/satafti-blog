@@ -8,7 +8,7 @@ layout: base.njk
       {{ postTitle }}
     </h2>
     <p class="text-tertiary lg:w-2/3 mx-auto">
-      Published at: {{ page.date | humanReadableDate }} · {{ content | timeToRead }} read
+      Published at: {{ page.date | humanReadableDate }} · {{ content | timeToRead }} read · <a class="italic" href="{% editOnGitHub page %}"> Edit this page</a>
     </p>
   </div>
   <article class="prose prose-indigo prose-lg md:mx-24 lg:mx-36 mx-8">
