@@ -13,8 +13,9 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
  */
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
-    assets: "/",
-    "assets/img/meta/favicon.ico": "/favicon.ico",
+    "assets": "/",
+    "img": "/img",
+    "img/meta/favicon.ico": "/favicon.ico",
   });
 
   eleventyConfig.addWatchTarget("site");
