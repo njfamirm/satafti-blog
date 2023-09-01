@@ -5,7 +5,6 @@ coverImage: "img/post/git-separate/cover.jpg"
 coverAlt: "Separating Commits in Git: A Guide to Streamlining Your Workflow"
 description: Explain git-separate for a better experience when using trunk-based deployment.
 tags:
-  - post
   - git
 date: git Created
 ---
