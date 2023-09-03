@@ -1,18 +1,20 @@
-.bg-effect {
-  background-color: transparent;
-  opacity: 0.1;
-  background:
-    radial-gradient(circle, transparent 20%, rgba(var(--sys-color-background), var(--tw-bg-opacity)) 20%, rgba(var(--sys-color-background), var(--tw-bg-opacity)) 80%, transparent 80%, transparent),
-    radial-gradient(circle, transparent 20%, rgba(var(--sys-color-background), var(--tw-bg-opacity)) 20%, rgba(var(--sys-color-background), var(--tw-bg-opacity)) 80%, transparent 80%, transparent) 40px 40px,
-    linear-gradient(rgba(var(--sys-color-primary), var(--tw-bg-opacity)) 3.2px, transparent 3.2px) 0 -1.6px,
-    linear-gradient(90deg, rgba(var(--sys-color-primary), var(--tw-bg-opacity)) 3.2px, rgba(var(--sys-color-background), var(--tw-bg-opacity)) 3.2px) -1.6px 0;
-  background-size: 80px 80px, 80px 80px, 40px 40px, 40px 40px;
+.cover-container > picture {
+  @apply absolute -z-10;
+}
+
+.cover-container > picture,
+.cover-container source,
+.cover-container img {
+  @apply w-full h-full;
+}
+
+.cover-container h1::selection {
+  background-color: rgba(var(--sys-color-primary), 0.3);
 }
 
 .post-container {
-
   img {
-    @apply my-8 dark:brightness-90 rounded-lg m-auto drop-shadow-2xl select-none;
+    @apply dark:brightness-90 rounded-lg m-auto select-none border border-white;
   }
 
   article {

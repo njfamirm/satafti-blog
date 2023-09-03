@@ -2,17 +2,16 @@
 layout: base.njk
 ---
 
-<div class="bg-effect absolute h-screen w-screen top-0 -z-10"></div>
 <div class="post-container container xl:max-w-7xl lg:px-8 m-auto">
-  <div class="text-center">
-    <h2 style="letter-spacing: -0.03em" class="font-extrabold mx-4 my-8 md:text-[4.5em] text-[2.5em] leading-none text-onBackground">
+
+  <div class="cover-container select-none flex flex-col justify-center items-center p-10 mb-10 text-center drop-shadow-2xl rounded-lg overflow-clip">
+      {% image "img/post-cover-bg.jpeg", "post cover" %}
+    <h1 class="title font-extrabold mx-4 my-8 md:text-[4.5em] text-[2.5em] leading-none text-background" style="letter-spacing: -0.03em">
       {{ title }}
-    </h2>
+    </h1>
   </div>
 
-  {% image coverImage, coverAlt %}
-
-  <div class="flex flex-row justify-between items-end text-tertiary">
+  <div class="flex flex-row justify-between items-end text-secondary">
     <div class="flex flex-col">
       <p>Author</p>
       <p class="font-bold">{{ site.author }}</p>
@@ -23,7 +22,7 @@ layout: base.njk
       <p>{{ content | timeToRead }} read</p>
     </div>
   </div>
-  <div class="w-full h-[2px] bg-tertiary my-4"></div>
+  <div class="w-full h-[2px] bg-secondary mt-4 mb-20"></div>
 
   <article class="prose prose-indigo prose-lg md:mx-24 lg:mx-36 mx-8">
 
