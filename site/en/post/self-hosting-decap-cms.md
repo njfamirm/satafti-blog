@@ -1,6 +1,5 @@
 ---
 title: "A Step-by-Step Guide to Self-Hosting Decap CMS"
-coverImage: "img/post/self-hosting-decap-cms/cover.jpg"
 coverAlt: "Decap CMS logo with text of how can self hosting them."
 description: Simple guide to host Decap CMS backend on your own server.
 keywords: 

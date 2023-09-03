@@ -13,8 +13,8 @@
 }
 
 .post-container {
-  img {
-    @apply dark:brightness-90 rounded-lg m-auto select-none border border-white;
+  img, source {
+    @apply dark:brightness-90 rounded-lg m-auto select-none border;
   }
 
   article {
