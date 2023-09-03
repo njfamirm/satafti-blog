@@ -4,6 +4,7 @@ const { esbuildTransform } = require("./config/esbuild.js");
 const { date } = require("./config/date.js");
 const { imageShortcode } = require("./shortcode/image.js");
 const { editOnGitHub } = require("./shortcode/edit-on-github.js");
+const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require("eleventy-plugin-time-to-read");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -20,6 +21,8 @@ module.exports = function (eleventyConfig) {
     "img/meta/favicon.ico": "/favicon.ico",
   });
 
+  eleventyConfig.setQuietMode(true);
+
   eleventyConfig.addWatchTarget("site");
 
   // eleventyConfig.on("eleventy.before", esbuildBuild);
@@ -30,6 +33,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(directoryOutputPlugin, {
+    columns: {
+      filesize: true,
+      benchmark: true,
+    },
+    warningFileSize: 400 * 1000,
+  });
 
   eleventyConfig.addFilter("humanReadableDate", date);
   eleventyConfig.addAsyncFilter("postcss", postcssProcess);
