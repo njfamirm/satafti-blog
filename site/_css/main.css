@@ -3,10 +3,6 @@
 @import "./syntax-highlighter.css";
 @import "./post.css";
 
-body {
-  @apply font-system p-0;
-}
-
 ::selection {
   @apply bg-secondary text-onSecondary;
 }
