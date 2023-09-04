@@ -4,9 +4,7 @@ coverAlt: "Decap CMS logo with text of how can self hosting them."
 description: Simple guide to host Decap CMS backend on your own server.
 keywords: 
   - decap-cms
-  - docker
   - self-hosting
-  - typescript
 ---
 
 Hi everyone!

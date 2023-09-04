@@ -2,11 +2,10 @@
 layout: base.njk
 ---
 
-<div class="post-container container xl:max-w-7xl lg:px-8 m-auto">
+<div class="post-container lg:px-8 m-10">
 
   <div class="cover-container select-none flex flex-col justify-center items-center p-10 mb-10 text-center drop-shadow-2xl rounded-lg overflow-clip">
-      {% image "img/post-cover-bg.jpeg", "post cover" %}
-    <h1 class="title font-extrabold mx-4 my-8 md:text-[4.5em] text-[2.5em] leading-none text-background" style="letter-spacing: -0.03em">
+    <h1 class="title font-extrabold mx-4 my-8 md:text-[4.5em] text-[2.5em] leading-none text-white drop-shadow-xl" style="letter-spacing: -0.03em">
       {{ title }}
     </h1>
   </div>
@@ -22,9 +21,9 @@ layout: base.njk
       <p>{{ content | timeToRead }} read</p>
     </div>
   </div>
-  <div class="w-full h-[2px] bg-secondary mt-4 mb-20"></div>
+  <div class="cover-container w-full h-[2px] mt-4 mb-20"></div>
 
-  <article class="prose prose-indigo prose-lg md:mx-24 lg:mx-36 mx-8">
+  <article class="prose prose-indigo prose-lg m-4">
 
     {{ content | safe }}
 
@@ -37,7 +36,7 @@ layout: base.njk
 
       <div class="flex flex-row gap-2 flex-wrap">
         {% for tag in keywords %}
-          <div class="font-semibold inline-flex px-2 py-1 leading-4 text-sm rounded text-onTertiary bg-tertiary select-none">{{ tag }}</div>
+          <div class="font-mono inline-flex px-2 py-1 leading-4 text-sm rounded text-onTertiary bg-tertiary select-none">{{ tag }}</div>
         {% endfor %}
       </div>
     </div>
