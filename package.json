@@ -20,7 +20,7 @@
     "watch": "yarn start",
     "clean": "rm -rf dist",
     "build": "eleventy",
-    "build:production": "siteUrl='https://njfamirm.ir' NODE_ENV='production' MY_ENVIRONMENT=production run-s clean build",
+    "build:production": "siteUrl='https://www.njfamirm.ir' NODE_ENV='production' MY_ENVIRONMENT=production run-s clean build",
     "build:staging": "siteUrl='https://beta.njfamirm.ir' NODE_ENV='production' MY_ENVIRONMENT=production noIndex=1 run-s clean build",
     "deploy:production": "wrangler pages deploy --branch=main --project-name=njfamirm-ir dist",
     "deploy:staging": "wrangler pages deploy --branch=main --project-name=beta-njfamirm-ir dist"
