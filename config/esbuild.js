@@ -1,23 +1,23 @@
-const { build, transform } = require("esbuild");
-const { env } = require("process");
+const {build, transform} = require('esbuild');
+const {env} = require('process');
 
-const debugMode = env.NODE_ENV !== "production";
+const debugMode = env.NODE_ENV !== 'production';
 async function esbuildBuild() {
   try {
     await build({
       entryPoints: [`site/_js/main.ts`],
-      outdir: "dist/",
-      logLevel: "info",
-      platform: "browser",
-      target: "es2018",
-      format: "esm",
+      outdir: 'dist/',
+      logLevel: 'info',
+      platform: 'browser',
+      target: 'es2018',
+      format: 'esm',
       minify: true,
       treeShaking: true,
       sourcemap: true,
       sourcesContent: debugMode,
       bundle: true,
-      charset: "utf8",
-      legalComments: "none",
+      charset: 'utf8',
+      legalComments: 'none',
       // splitting: true,
     });
   } catch (err) {
@@ -28,17 +28,17 @@ async function esbuildBuild() {
 async function esbuildTransform(content) {
   try {
     const result = await transform(content, {
-      logLevel: "info",
-      platform: "browser",
-      target: "es2018",
-      format: "esm",
+      logLevel: 'info',
+      platform: 'browser',
+      target: 'es2018',
+      format: 'esm',
       minify: true,
       treeShaking: true,
       sourcemap: true,
       // bundle: true,
       // splitting: true,
-      charset: "utf8",
-      legalComments: "none",
+      charset: 'utf8',
+      legalComments: 'none',
     });
 
     return result.code;
@@ -48,4 +48,4 @@ async function esbuildTransform(content) {
   }
 }
 
-module.exports = { esbuildBuild, esbuildTransform };
+module.exports = {esbuildBuild, esbuildTransform};

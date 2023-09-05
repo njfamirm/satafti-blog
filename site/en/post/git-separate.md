@@ -1,6 +1,6 @@
 ---
-title: "Separating Commits in Git: A Guide to Streamlining Your Workflow"
-coverAlt: "Separating Commits in Git: A Guide to Streamlining Your Workflow"
+title: 'Separating Commits in Git: A Guide to Streamlining Your Workflow'
+coverAlt: 'Separating Commits in Git: A Guide to Streamlining Your Workflow'
 description: Explain git-separate for a better experience when using trunk-based deployment.
 keywords:
   - git

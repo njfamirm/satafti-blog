@@ -1,7 +1,7 @@
-@import "@alwatr/style/main.css";
-@import "@alwatr/style/palettes/h300.css";
-@import "./syntax-highlighter.css";
-@import "./post.css";
+@import '@alwatr/style/main.css';
+@import '@alwatr/style/palettes/h300.css';
+@import './syntax-highlighter.css';
+@import './post.css';
 
 ::selection {
   @apply bg-secondary text-onSecondary;
