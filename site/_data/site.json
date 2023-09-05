@@ -1,9 +1,9 @@
 {
   "title": "njfamirm",
   "description": "S. Amir Mohammad Najafi personal blog and portfolio.",
-  "author": ["S. Amir Mohammad Najafi"],
+  "author": {"name": "S. Amir Mohammad Najafi", "email": "njfamirm@gmail.com"},
   "defaultSocialImage": "img/meta/social.png",
-  "locale": "en",
+  "locale": "en-US",
   "dir": "ltr",
   "theme": {
     "dark": "#9c82db",
