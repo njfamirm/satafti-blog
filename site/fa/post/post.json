@@ -2,7 +2,6 @@
   "layout": "post.njk",
   "tags": ["post"],
   "templateEngineOverride": "njk,md",
-  "permalink": "{{ page.filePathStem }}.html",
   "site": {
     "locale": "fa",
     "dir": "rtl"
