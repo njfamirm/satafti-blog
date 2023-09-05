@@ -7,7 +7,7 @@
 
 .post-container {
   img {
-    @apply dark:brightness-90 rounded-lg m-auto select-none border;
+    @apply dark:brightness-90 rounded-lg select-none my-10;
   }
 
   article {
