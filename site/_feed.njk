@@ -1,26 +1,28 @@
 ---
-permalink: /feed.xml
+permalink: /feed.atom
 eleventyExcludeFromCollections: true
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ metadata.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title }}</title>
-    <link>{{ env.siteUrl }}</link>
-    <atom:link href="{{ permalink | absoluteUrl(env.siteUrl) }}" rel="self" type="application/rss+xml"/>
-    <description>{{ site.description }}</description>
-    <language>{{ site.locale }}</language>
-    {%- for post in collections.post | reverse %}
-      {%- set absolutePostUrl = post.url | absoluteUrl(env.siteUrl) %}
-      <item>
-        <title>{{ post.data.title }}</title>
-        <link>{{ absolutePostUrl }}</link>
-        <description>{{ post.data.description | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
-        <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
-        <dc:creator>{{ site.author }}</dc:creator>
-        <guid>{{ absolutePostUrl }}</guid>
-      </item>
-    {%- endfor %}
-  </channel>
-</rss>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ env.siteUrl }}{{ permalink }}" rel="self"/>
+  <link href="{{ env.siteUrl }}"/>
+  <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ env.siteUrl }}</id>
+  <author>
+    <name>{{ site.author.name }}</name>
+    <email>{{ site.author.email }}</email>
+  </author>
+  {%- for post in collections.post | reverse %}
+  {%- set absolutePostUrl = post.url | absoluteUrl(env.siteUrl) %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content xml:lang="{{ site.locale }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

@@ -20,6 +20,8 @@
 
 <link rel="manifest" href="/manifest.webmanifest"/>
 
+<link rel="alternate" title="Blog Posts" type=application/atom+xml href="/feed.atom">
+
 <meta name="color-scheme" content="light dark"/>
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="{{ site.theme.light }}"/>
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="{{ site.theme.dark }}"/>
@@ -51,7 +53,7 @@
 {% endif %}
 <meta name="twitter:creator" content="@njfamirm"/>
 
-<meta name="authors" content="{{ authors or site.author | sort }}"/>
+<meta name="authors" content="{{ authors or site.author.name | sort }}"/>
 
 {% if tags %}
   <meta name="tags" content="{{ tags | sort }}"/>
