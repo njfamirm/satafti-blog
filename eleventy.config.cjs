@@ -1,6 +1,6 @@
 const {minifyHtml} = require('./config/minify-html');
 const {postcssProcess} = require('./config/postcss.js');
-const {esbuildTransform} = require('./config/esbuild.js');
+const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
 const {date} = require('./config/date.js');
 const {imageShortcode} = require('./shortcode/image.js');
 const {editOnGitHub} = require('./shortcode/edit-on-github.js');
@@ -25,7 +25,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget('site');
 
-  // eleventyConfig.on("eleventy.before", esbuildBuild);
+  eleventyConfig.on("eleventy.before", esbuildBuild);
 
   eleventyConfig.addShortcode('image', imageShortcode);
   eleventyConfig.addShortcode('editOnGitHub', editOnGitHub);
