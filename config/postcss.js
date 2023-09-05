@@ -20,4 +20,4 @@ function postcssProcess(code) {
   }
 }
 
-module.exports = { postcssProcess };
+module.exports = {postcssProcess};
