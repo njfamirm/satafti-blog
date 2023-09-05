@@ -821,10 +821,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
-"@types/quicklink@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@types/quicklink/-/quicklink-2.3.0.tgz#4cc494b62c3e2fb97b10f3bba8050a554baceb8d"
-  integrity sha512-kajAwQDUn9g8JGHbpMIdIUqg8nAF+I/q1nRgBIvtq/ulATh2ubruh8+ZPJrZjCeV/6FDQg6PzEUWJvnfK+65QQ==
+"@types/quicklink@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@types/quicklink/-/quicklink-2.3.1.tgz#d1e93920a5c2f5ae175b9e6c31e2c1fa781a6ce8"
+  integrity sha512-7MJ3I1djGppoGE1wBA2uJdVAm4ReZZsLcA2l3cjDIh4cZTTH3OPDRt9IU+gmz11WyZxThUPvrLopwhzEB7VNrw==
 
 a-sync-waterfall@^1.0.0:
   version "1.0.1"
