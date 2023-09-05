@@ -1,8 +1,8 @@
 ---
-title: "A Step-by-Step Guide to Self-Hosting Decap CMS"
-coverAlt: "Decap CMS logo with text of how can self hosting them."
+title: A Step-by-Step Guide to Self-Hosting Decap CMS
+coverAlt: Decap CMS logo with text of how can self hosting them.
 description: Simple guide to host Decap CMS backend on your own server.
-keywords: 
+keywords:
   - decap-cms
   - self-hosting
 ---
@@ -45,7 +45,7 @@ Then add admin html and javascript/typescript file like below:
 `admin.html`
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -62,7 +62,7 @@ Then add admin html and javascript/typescript file like below:
 `admin.js`
 
 ```js
-import CMS from "netlify-cms-app";
+import CMS from 'netlify-cms-app';
 
 CMS.init();
 ```
