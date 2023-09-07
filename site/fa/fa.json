@@ -1,3 +1,8 @@
 {
-  "layout": "base.njk"
+  "layout": "base.njk",
+  "templateEngineOverride": "njk,md",
+  "site": {
+    "locale": "fa-IR",
+    "dir": "rtl"
+  }
 }

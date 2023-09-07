@@ -2,15 +2,18 @@
 layout: base.njk
 ---
 
-<div class="prayer-container lg:px-24 m-10">
+<div class="prayer-container lg:px-24 m-6">
 
-  <div class="mesh-gradient select-none flex flex-col justify-center items-center p-10 mb-10 text-center drop-shadow-2xl rounded-lg overflow-clip">
-    <h1 class="title font-extrabold mx-4 my-8 md:text-[4.5em] text-[2.5em] leading-none text-white drop-shadow-xl" style="letter-spacing: -0.03em">
+  <div class="flex flex-col justify-center items-center text-center drop-shadow-2xl select-none">
+    <div class="rounded-lg overflow-hidden">
+      {% image coverImage, coverAlt %}
+    </div>
+    <h1 class="title font-extrabold mx-2 my-4 md:text-[4.5em] text-[2.5em] leading-none text-white drop-shadow-xl" style="letter-spacing: -0.03em">
       {{ title }}
     </h1>
   </div>
 
-  <article class="prose prose-indigo prose-lg m-4 lg:px-48">
+  <article class="prose prose-indigo prose-lg m-4">
 
     {{ content | safe }}
 

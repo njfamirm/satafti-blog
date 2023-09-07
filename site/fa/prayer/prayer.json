@@ -1,9 +1,4 @@
 {
   "layout": "prayer.njk",
-  "tags": ["prayer"],
-  "templateEngineOverride": "njk,md",
-  "site": {
-    "locale": "fa",
-    "dir": "rtl"
-  }
+  "tags": ["prayer"]
 }

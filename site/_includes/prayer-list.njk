@@ -8,21 +8,24 @@
     </h3>
   </div>
   <div class="flex flex-row flex-wrap justify-center gap-2 md:gap-8 w-full">
-    {% for prayer in collections.prayer %}
-      <a href="{{ prayer.url }}" class="py-5 cursor-pointer lg:w-2/5 medium:w-2/5 group">
+    {% for post in collections.prayer %}
+      <a href="{{ post.url }}" class="py-5 cursor-pointer lg:w-2/5 medium:w-2/5 group">
 
-        <div class="mesh-gradient flex flex-col flex-wrap justify-center items-center p-5 mb-4 text-center group-hover:drop-shadow-lg rounded-lg overflow-clip transition">
-          <h2 style="letter-spacing: -0.03em" class="title font-extrabold mx-4 my-8 md:text-[2em] text-[2.5em] leading-none text-white">
-            {{ prayer.data.title }}
+        <div class="flex flex-col flex-wrap justify-center group-hover:drop-shadow-lg transition">
+          <div class="rounded-lg overflow-hidden">
+            {% image post.data.coverImage, post.data.coverAlt %}
+          </div>
+          <h2 style="letter-spacing: -0.03em" class="title font-extrabold mx-4 my-2 md:text-[2em] text-[2.5em] leading-none text-white">
+            {{ post.data.title }}
           </h2>
         </div>
 
-        <p class="leading-relaxed text-secondary mb-1">
-          {{ prayer.data.description }}
+        <p class="leading-relaxed text-secondary mb-1 mx-5">
+          {{ post.data.description }}
         </p>
 
-        <div class="flex flex-row flex-wrap w-full gap-1 text-center">
-          {% for tag in prayer.data.keywords %}
+        <div class="flex flex-row flex-wrap w-full gap-1 text-center mx-5">
+          {% for tag in post.data.keywords %}
             <div>
               <div class="font-extralight inline-flex p-1 rounded leading-4 text-onTertiary bg-tertiary" style="font-size: 0.7em">{{ tag }}</div>
             </div>
