@@ -5,7 +5,7 @@ const debugMode = env.NODE_ENV !== 'production';
 async function esbuildBuild() {
   try {
     await build({
-      entryPoints: ['site/_js/script.ts'],
+      entryPoints: ['site/_js/script.ts', 'site/_js/service-worker.ts'],
       outdir: 'dist/',
       logLevel: 'info',
       platform: 'browser',
@@ -13,8 +13,7 @@ async function esbuildBuild() {
       format: 'esm',
       minify: true,
       treeShaking: true,
-      sourcemap: true,
-      sourcesContent: debugMode,
+      sourcemap: debugMode,
       bundle: true,
       charset: 'utf8',
       legalComments: 'none',
@@ -34,7 +33,7 @@ async function esbuildTransform(content) {
       format: 'esm',
       minify: true,
       treeShaking: true,
-      sourcemap: true,
+      sourcemap: debugMode,
       // bundle: true,
       // splitting: true,
       charset: 'utf8',
