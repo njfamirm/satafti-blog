@@ -4,7 +4,7 @@ eleventyExcludeFromCollections: true
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ env.siteUrl }}">
   <title>{{ site.title }}</title>
   <subtitle>{{ site.description }}</subtitle>
   <link href="{{ env.siteUrl }}{{ permalink }}" rel="self"/>
