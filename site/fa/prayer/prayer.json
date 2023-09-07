@@ -1,6 +1,6 @@
 {
-  "layout": "post.njk",
-  "tags": ["post"],
+  "layout": "prayer.njk",
+  "tags": ["prayer"],
   "templateEngineOverride": "njk,md",
   "site": {
     "locale": "fa",

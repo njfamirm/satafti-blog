@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 
-<div class="post-container lg:px-24 m-10">
+<div class="prayer-container lg:px-24 m-10">
 
   <div class="mesh-gradient select-none flex flex-col justify-center items-center p-10 mb-10 text-center drop-shadow-2xl rounded-lg overflow-clip">
     <h1 class="title font-extrabold mx-4 my-8 md:text-[4.5em] text-[2.5em] leading-none text-white drop-shadow-xl" style="letter-spacing: -0.03em">
@@ -10,20 +10,7 @@ layout: base.njk
     </h1>
   </div>
 
-  <div class="flex flex-row justify-between items-end text-secondary">
-    <div class="flex flex-col">
-      <p>Author</p>
-      <p class="font-bold">{{ site.author.name }}</p>
-    </div>
-
-    <div class="flex flex-col">
-      <p>{{ page.date | humanReadableDate }}</p>
-      <p>{{ content | timeToRead }} read</p>
-    </div>
-  </div>
-  <div class="mesh-gradient w-full h-[2px] mt-4 mb-20"></div>
-
-  <article class="prose prose-indigo prose-lg m-4 lg:px-24">
+  <article class="prose prose-indigo prose-lg m-4 lg:px-48">
 
     {{ content | safe }}
 
@@ -36,7 +23,7 @@ layout: base.njk
 
       <div class="flex flex-row gap-2 flex-wrap">
         {% for tag in keywords %}
-          <div class="font-mono inline-flex px-2 py-1 leading-4 text-sm rounded text-onTertiary bg-tertiary select-none">{{ tag }}</div>
+          <div class="font-extralight inline-flex px-2 py-1 leading-4 text-sm rounded text-onTertiary bg-tertiary select-none">{{ tag }}</div>
         {% endfor %}
       </div>
     </div>
