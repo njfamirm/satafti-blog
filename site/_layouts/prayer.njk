@@ -2,13 +2,13 @@
 layout: base.njk
 ---
 
-<div class="prayer-container lg:px-24 m-6">
+<div class="prayer-container px-5 lg:px-48 lg:mx-48 m-6">
 
-  <div class="flex flex-col justify-center items-center text-center drop-shadow-2xl select-none">
-    <div class="rounded-lg overflow-hidden">
+  <div class="w-full select-none flex flex-col justify-center items-center mb-10 text-center drop-shadow-2xl rounded-lg overflow-clip">
+    <div class="w-full absolute rounded-lg overflow-hidden">
       {% image coverImage, coverAlt %}
     </div>
-    <h1 class="title font-extrabold mx-2 my-4 md:text-[4.5em] text-[2.5em] leading-none text-white drop-shadow-xl" style="letter-spacing: -0.03em">
+    <h1 class="title font-extrabold mx-2 my-8 md:text-[4.5em] text-[3em] leading-none text-white drop-shadow-xl" style="letter-spacing: -0.03em">
       {{ title }}
     </h1>
   </div>
@@ -26,7 +26,7 @@ layout: base.njk
 
       <div class="flex flex-row gap-2 flex-wrap">
         {% for tag in keywords %}
-          <div class="font-extralight inline-flex px-2 py-1 leading-4 text-sm rounded text-onTertiary bg-tertiary select-none">{{ tag }}</div>
+          <div class="inline-flex px-2 py-1 leading-4 text-sm rounded text-onTertiary bg-tertiary font-kalameh select-none">{{ tag }}</div>
         {% endfor %}
       </div>
     </div>
