@@ -10,9 +10,7 @@ export default {
         ...tailwindConfig.theme.extend.fontFamily,
         kalameh: [
           ['"kalameh"', ...tailwindConfig.theme.extend.fontFamily.system],
-          {
-            fontFeatureSettings: '"calt" 1, "tnum" 0',
-          },
+          {fontFeatureSettings: '"calt" 1, "tnum" 0'},
         ],
       },
     },
