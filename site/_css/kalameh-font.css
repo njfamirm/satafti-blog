@@ -29,7 +29,7 @@
 }
 @font-face {
   font-family: kalameh;
-  font-weight: normal;
+  font-weight: 400;
   src:
     url('/font/kalameh/kalameh-400.woff2') format('woff2'),
     url('/font/kalameh/kalameh-400.woff') format('woff');
@@ -38,7 +38,7 @@
 }
 @font-face {
   font-family: kalameh;
-  font-weight: bold;
+  font-weight: 700;
   src:
     url('/font/kalameh/kalameh-700.woff2') format('woff2'),
     url('/font/kalameh/kalameh-700.woff') format('woff');

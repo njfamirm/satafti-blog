@@ -20,7 +20,7 @@
     }
 
     p {
-      @apply leading-10 text-2xl my-5;
+      @apply leading-10 text-xl my-5;
     }
   }
 }
