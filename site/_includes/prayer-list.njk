@@ -12,10 +12,10 @@
       <a href="{{ post.url }}" class="w-full sm:w-auto py-5 cursor-pointer lg:w-2/5 medium:w-2/5 group">
 
         <div class="w-full select-none flex flex-col justify-center items-center mb-2 text-center drop-shadow-2xl rounded-lg overflow-clip">
-          <div class="w-full absolute rounded-lg overflow-hidden">
+          <div class="w-full rounded-lg overflow-hidden">
             {% image post.data.coverImage, post.data.coverAlt %}
           </div>
-          <h2 class="font-extrabold mx-2 my-8 leading-none text-4xl text-white drop-shadow-xl" style="letter-spacing: -0.03em">
+          <h2 class="font-extrabold absolute mx-2 my-8 leading-none text-5xl text-white drop-shadow-xl" style="letter-spacing: -0.03em">
             {{ post.data.title }}
           </h2>
         </div>
