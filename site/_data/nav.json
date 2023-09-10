@@ -2,11 +2,11 @@
   "main": [
     {
       "label": "Home",
-      "link": "/"
+      "url": "/"
     },
     {
       "label": "Post",
-      "link": "/en/post/"
+      "url": "/en/post/"
     }
   ]
 }
