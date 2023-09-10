@@ -6,8 +6,9 @@
 
     <nav class="text-sm md:text-base space-x-4 md:space-x-6">
       {% for menu in nav.main %}
-        <a class="font-semibold text-onBackground hover:hover:brightness-150
-          {% if page.url == menu.link %} text-secondary {% endif %}" href="{{ menu.link }}">{{menu.label }}</a>
+        <a class="font-semibold text-onBackground hover:hover:brightness-150 {% if page.url == menu.url %} text-secondary {% endif %}" href="{{ menu.url }}">
+          {{ menu.label }}
+        </a>
       {% endfor %}
     </nav>
   </div>

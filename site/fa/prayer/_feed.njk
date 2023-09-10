@@ -1,5 +1,5 @@
 ---
-permalink: /fa/prayer/feed.atom
+permalink: /fa/prayer/feed.xml
 layout: null
 eleventyExcludeFromCollections: true
 ---
@@ -23,7 +23,6 @@ eleventyExcludeFromCollections: true
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content xml:lang="{{ site.locale }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
   {%- endfor %}
 </feed>
