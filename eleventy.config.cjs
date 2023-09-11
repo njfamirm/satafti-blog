@@ -1,5 +1,6 @@
 const {minifyHtml} = require('./config/minify-html');
 const {postcssProcess} = require('./config/postcss.js');
+const {getHostname} = require('./config/url.js');
 const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
 const {date} = require('./config/date.js');
 const {imageShortcode} = require('./shortcode/image.js');
@@ -41,6 +42,7 @@ module.exports = function (eleventyConfig) {
     warningFileSize: 400 * 1000,
   });
 
+  eleventyConfig.addFilter('getHostname', getHostname);
   eleventyConfig.addFilter('humanReadableDate', date);
   eleventyConfig.addAsyncFilter('postcss', postcssProcess);
   eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
