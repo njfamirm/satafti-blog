@@ -1,7 +1,7 @@
 ---
 title: زیارت آل یاسین
 description: زیارت آل یاسین علیهم‌السلام
-coverImage: img/prayer/ale-yasin/cover.jpg
+coverImage: assets/img/prayer/ale-yasin/cover.jpg
 coverAlt: گل نرگس که یکی از نشانه‌های امام زمان عجل‌الله‌تعالی‌فرجه‌الشریف هست.
 keywords:
   - زیارت

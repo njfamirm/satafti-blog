@@ -25,11 +25,11 @@ To create an OAuth application, you will need to:
 
 Once you have entered all of the required information, click Create Application.
 
-{% image "img/post/self-hosting-decap-cms/create-oauth-screenshot.jpg", "Create Oauth app on Github for Decap CMS" %}
+{% image "assets/img/post/self-hosting-decap-cms/create-oauth-screenshot.jpg", "Create Oauth app on Github for Decap CMS" %}
 
 Then when the application is created, save the `Client ID` and create new `Client secrets` for use in the last step.
 
-{% image "img/post/self-hosting-decap-cms/oauth-setting-screenshot.jpg", "Create client ID and secret ID in Github OAuth app" %}
+{% image "assets/img/post/self-hosting-decap-cms/oauth-setting-screenshot.jpg", "Create client ID and secret ID in Github OAuth app" %}
 
 ### Add CMS to the Website
 
