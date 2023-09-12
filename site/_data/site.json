@@ -1,14 +1,14 @@
 {
-  "title": "njfamirm",
-  "description": "S. Amir Mohammad Najafi personal blog and portfolio.",
-  "author": {"name": "S. Amir Mohammad Najafi", "email": "njfamirm@gmail.com", "url": "https://twitter.com/njfamirm"},
+  "title": "satafti",
+  "description": "S. Alireza Tafti personal blog.",
+  "author": {"name": "S. Alireza Tafti", "email": "satafti@gmail.com", "url": "https://www.satfati.ir"},
   "defaultSocialImage": "img/meta/social.png",
-  "locale": "en-US",
-  "dir": "ltr",
+  "locale": "fa-IR",
+  "dir": "rtl",
   "theme": {
     "dark": "#9c82db",
     "light": "#684fa4",
     "splashBackground": "#ffff"
   },
-  "googleAnalyticsKey": "G-SEMDKSSZ4R"
+  "googleAnalyticsKey": ""
 }

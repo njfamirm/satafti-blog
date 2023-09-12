@@ -1,16 +1,12 @@
 {
   "main": [
     {
-      "label": "Home",
+      "label": "صفحه اصلی",
       "url": "/"
     },
     {
-      "label": "Post",
-      "url": "/en/post/"
-    },
-    {
-      "label": "Reading List",
-      "url": "/en/reading/"
+      "label": "پست‌",
+      "url": "/fa/post/"
     }
   ]
 }

@@ -15,11 +15,10 @@
     "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
   },
   "cSpell.words": [
+    "alireza",
     "cssnano",
-    "decap",
-    "tailwindcss",
-    "treeshake",
-    "tailwindcss",
-    "esbuild"
+    "satafti",
+    "tafti",
+    "tailwindcss"
   ]
 }

@@ -1,10 +1,10 @@
 <main class="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
   <div class="text-center">
     <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-primary">
-      My posts
+      پست‌های من
     </h2>
     <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-secondary lg:w-2/3 mx-auto">
-        See my latest posts thats I'm write.
+        آخرین نوشته‌های من را ببینید.
     </h3>
   </div>
   <div class="flex flex-row flex-wrap justify-center gap-2 md:gap-8 w-full">
@@ -24,7 +24,7 @@
         <div class="flex flex-row flex-wrap w-full gap-1 text-center">
           {% for tag in post.data.keywords %}
             <div>
-              <div class="font-mono inline-flex p-1 rounded leading-4 text-onTertiary bg-tertiary" style="font-size: 0.7em">{{ tag }}</div>
+              <div class="text-light inline-flex p-1 rounded leading-4 text-onTertiary bg-tertiary" style="font-size: 0.7em">{{ tag }}</div>
             </div>
           {% endfor %}
         </div>
