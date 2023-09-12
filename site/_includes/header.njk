@@ -1,5 +1,8 @@
 <header class="header flex flex-row justify-between items-center w-screen px-10 py-8 gap-10 z-20">
   {# <a href="/"><img class="w-10" src="/img/logo.png" alt="logo"></a> #}
+  <a href="/" class="font-bold text-xl tracking-wide p-[2px] rounded-md text-primary hover:brightness-150">
+    <i>njfamirm</i>
+  </a>
   <div class="flex flex-row justify-end gap-8 items-center text-md font-bold">
     {% for menu in nav.main %}
       <a class="text-onBackground hidden lg:block {% if page.url==menu.url %} brightness-90 {% endif %}" href="{{ menu.url }}">
@@ -10,7 +13,4 @@
       <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
     </span>
   </div>
-  <a href="/" class="font-bold text-xl tracking-wide p-[2px] rounded-md text-primary hover:brightness-150">
-    <i>njfamirm</i>
-  </a>
 </header>
