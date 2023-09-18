@@ -1,10 +1,10 @@
 {
-  "title": "12fy-blog",
-  "description": "12fy base blog.",
-  "author": {"name": "Alwatr", "email": "info@alwatr.ir", "url": "https://github.com/AliMd/alwatr"},
+  "title": "Satafti",
+  "description": "S. Alireza Tafti personal blog.",
+  "author": {"name": "S. Alireza Tafti", "email": "satafti@gmail.com", "url": "https://www.satafti.ir"},
   "defaultSocialImage": "img/meta/social.jpg",
-  "locale": "en-US",
-  "dir": "ltr",
+  "locale": "fa-IR",
+  "dir": "rtl",
   "theme": {
     "light": "#215fa6",
     "dark": "#5d92dd",
