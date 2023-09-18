@@ -3,7 +3,7 @@ title: اولین مقاله امتحانی
 description: دوست دارم که بدونید تا همینحا خیلی زحمت کشیده شده :)
 socialImage: /img/blog/sample-post/cover.jpg
 type:
-  - اموزشی
+  - آموزشی
 keywords:
   - 11ty
 ---
