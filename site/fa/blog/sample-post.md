@@ -1,43 +1,34 @@
 ---
-title: A Step-by-Step Guide to write post
-description: Simple guide to write post and you can write spam text for better view.
-author:
-  name: S. Amir Mohammad Najafi
-  url: https://www.njfamirm.ir
-  avatar: /img/authors/njfamirm.jpg
+title: اولین مقاله امتحانی
+description: دوست دارم که بدونید تا همینحا خیلی زحمت کشیده شده :)
 socialImage: /img/blog/sample-post/cover.jpg
 type:
-  - Training
+  - اموزشی
 keywords:
   - 11ty
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus possimus ipsa dolorum numquam molestias nostrum officia! Eligendi, praesentium ipsam aspernatur dolor illum doloremque fugiat minima numquam velit modi ab expedita?
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
 
-## Lorem ipsum
+## لورم
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit:
-
-1. Go to the [lorem](https://lorem-ipsum.ir) from `Home`
-2. Copy text.
-3. Lorem ipsum dolor sit amet consectetur adipisicing *elit*.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 
 {% image "/img/hero.jpg", "Image" %}
 
-Then when the application is created, save the `Client ID` and create new `Client secrets` for use in the last step.
+ در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 
-### Ipsum
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus possimus ipsa dolorum numquam molestias nostrum officia! Eligendi, praesentium ipsam aspernatur dolor illum doloremque fugiat minima numquam velit modi ab expedita?
+### ایپسوم
+
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
 
 ```sh
 yarn add lorem
 ```
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus possimus ipsa dolorum numquam molestias nostrum officia! Eligendi, praesentium ipsam aspernatur dolor illum doloremque fugiat minima numquam velit modi ab expedita?
+ در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 
-**Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus possimus ipsa dolorum numquam molestias nostrum officia! Eligendi, praesentium ipsam aspernatur dolor illum doloremque fugiat minima numquam velit modi ab expedita?**
+کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
 
-I hope this article was useful for you!
+امیدوارم مقاله مفیدی بوده باشه‌ :>
