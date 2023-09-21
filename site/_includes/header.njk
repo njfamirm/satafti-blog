@@ -1,8 +1,8 @@
-<header class="header flex flex-row justify-between items-center gap-10 w-screen fixed px-24 py-2 text-onBackground z-20 top-0">
-  <a href="/" class="font-bold hover:brightness-150 p-[2px] rounded-md text-primary text-4xl tracking-wide">
-    <i>Satafti</i>
+<header class="header flex flex-row justify-between items-center gap-10 w-screen fixed px-4 py-4 text-onBackground z-20 top-0">
+  <a href="/" class="font-bold text-xl tracking-wide p-[2px] rounded-md text-primary hover:brightness-150">
+    <i>satafti</i>
   </a>
-  <div class="flex flex-row justify-first grow gap-8 items-center text-l font-bold">
+  <div class="flex flex-row justify-end grow gap-8 items-center text-md font-bold">
     {% for menu in collections.all | eleventyNavigation %}
       <a class="hidden lg:block hover:brightness-200 hover:no-underline {% if page.url == menu.url %} brightness-150 {% endif %}" href="{{ menu.url }}">
         {{ menu.key }}
