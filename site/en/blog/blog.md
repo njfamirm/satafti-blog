@@ -4,6 +4,7 @@ pagination:
   size: 1
   alias: post
   reverse: true
+  addAllPagesToCollections: true
 permalink: /en/blog/{{post.attributes.title | slugify}}.html
 eleventyComputed:
   publishedAt: '{{post.attributes.publishedAt}}'
