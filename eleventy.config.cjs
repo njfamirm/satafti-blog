@@ -4,7 +4,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {markdown} = require('./config/markdown.js');
 const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
 const {postcssProcess} = require('./config/postcss.js');
-const {downloadImage} = require('./config/downloadImage.js');
+const {downloadImage} = require('./config/download-image.js');
 const {
   slugify,
   trimer,

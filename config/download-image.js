@@ -1,9 +1,13 @@
 const {basename} = require('path');
 const {writeFileSync} = require('fs');
+const fetch = require('@11ty/eleventy-fetch');
 
 async function download(url, path) {
-  const response = await fetch(url);
-  const buffer = await response.arrayBuffer();
+  let buffer = await fetch(url, {
+    duration: "1d",
+    type: "buffer",
+  });
+
   writeFileSync(path, Buffer.from(buffer));
 }
 
