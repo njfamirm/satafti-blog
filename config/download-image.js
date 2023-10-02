@@ -12,7 +12,7 @@ async function download(url, path) {
 }
 
 async function downloadImage(markdown) {
-  const regex = /!\[.*?\]\((.*?)\)/g;
+  const regex = /!\[.*?\]\((https?:\/\/.*?)\)/g;
   const matches = markdown.matchAll(regex);
   for (const match of matches) {
     const url = match[1];
