@@ -27,7 +27,7 @@ function normalizeKeyword(keyword) {
     keywordList = keyword.split('\n');
   }
 
-  return keywordList.map(keyword => keyword.trim().toLowerCase()).join(', ');
+  return keywordList.map((keyword) => keyword.trim().toLowerCase()).join(', ');
 }
 
 function jsonParse(content) {

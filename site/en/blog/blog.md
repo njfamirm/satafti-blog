@@ -15,4 +15,4 @@ eleventyComputed:
   socialImage: 'https://admin.njfamirm.ir{{post.attributes.cover.data.attributes.url}}'
 ---
 
-{{content}}
+{{ content | downloadImage }}

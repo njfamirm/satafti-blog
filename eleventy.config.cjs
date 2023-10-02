@@ -4,8 +4,16 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {markdown} = require('./config/markdown.js');
 const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
 const {postcssProcess} = require('./config/postcss.js');
-const {date} = require('./config/date.js');
-const {slugify, trimer, jsonParse, jsonStringify, humanReadableDate, simpleDate, normalizeKeyword} = require('./config/util.js');
+const {downloadImage} = require('./config/downloadImage.js');
+const {
+  slugify,
+  trimer,
+  jsonParse,
+  jsonStringify,
+  humanReadableDate,
+  simpleDate,
+  normalizeKeyword,
+} = require('./config/util.js');
 const {loadIcon} = require('./shortcode/alwatr-icon.js');
 const {image} = require('./shortcode/image.js');
 const {editOnGitHub} = require('./shortcode/edit-on-github.js');
@@ -47,6 +55,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('simpleDate', simpleDate);
   eleventyConfig.addFilter('normalizeKeyword', normalizeKeyword);
   eleventyConfig.addAsyncFilter('postcss', postcssProcess);
+  eleventyConfig.addAsyncFilter('downloadImage', downloadImage);
   eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
 
   eleventyConfig.addShortcode('alwatrIcon', loadIcon);
