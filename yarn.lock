@@ -30,6 +30,7 @@ __metadata:
     markdown-it: ^13.0.2
     markdown-it-anchor: ^8.6.7
     markdown-it-attrs: ^4.1.6
+    markdown-it-eleventy-img: ^0.10.1
     npm-run-all: ^4.1.5
     postcss: ^8.4.31
     postcss-import: ^15.1.0
@@ -4335,6 +4336,17 @@ __metadata:
   peerDependencies:
     markdown-it: ">= 9.0.0"
   checksum: 3487fab315a5955f1882edcb29b5362fcdc9a369c4cd1c38688b3d32a145254094d2d8389bdd6887c3af66f9a9a75143f167d88421dcf201e54ec587675756a0
+  languageName: node
+  linkType: hard
+
+"markdown-it-eleventy-img@npm:^0.10.1":
+  version: 0.10.1
+  resolution: "markdown-it-eleventy-img@npm:0.10.1"
+  dependencies:
+    "@11ty/eleventy-img": ^3.1.0
+  peerDependencies:
+    markdown-it: ">= 9.0.0"
+  checksum: 44dfe37c8d61bdb12715b3b53f93b15a817c1ae76f5bfe225930d145cf3712070e4bbee86ff32dd2af010596c962791a0bae85004b579bdf49f09f93ff42094d
   languageName: node
   linkType: hard
 
