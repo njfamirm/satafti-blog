@@ -5,10 +5,19 @@ const {markdown} = require('./config/markdown.js');
 const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
 const {postcssProcess} = require('./config/postcss.js');
 const {date} = require('./config/date.js');
+const {slugify, trimer, jsonParse, jsonStringify, humanReadableDate, simpleDate, normalizeKeyword} = require('./config/util.js');
 const {loadIcon} = require('./shortcode/alwatr-icon.js');
 const {image} = require('./shortcode/image.js');
 const {editOnGitHub} = require('./shortcode/edit-on-github.js');
 const {minifyHtml} = require('./config/minify-html');
+
+const directoryOutputPluginConfig = {
+  columns: {
+    filesize: true,
+    benchmark: true,
+  },
+  warningFileSize: 400 * 1000,
+};
 
 /**
  * 11ty configuration.
@@ -30,16 +39,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(directoryOutputPlugin, {
-    columns: {
-      filesize: true,
-      benchmark: true,
-    },
-    warningFileSize: 400 * 1000,
-  });
-
-  eleventyConfig.addFilter('humanReadableDate', date);
-  eleventyConfig.addFilter('trimer', (content) => content.trim());
+  eleventyConfig.addPlugin(directoryOutputPlugin, directoryOutputPluginConfig);
+  eleventyConfig.addFilter('slugify', slugify);
+  eleventyConfig.addFilter('jsonParse', jsonParse);
+  eleventyConfig.addFilter('jsonStringify', jsonStringify);
+  eleventyConfig.addFilter('humanReadableDate', humanReadableDate);
+  eleventyConfig.addFilter('simpleDate', simpleDate);
+  eleventyConfig.addFilter('normalizeKeyword', normalizeKeyword);
   eleventyConfig.addAsyncFilter('postcss', postcssProcess);
   eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
 
@@ -48,7 +54,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode('image', image);
 
   eleventyConfig.addTransform('minifyHtml', minifyHtml);
-  eleventyConfig.addTransform('trimer', (content) => content.trim());
+  eleventyConfig.addTransform('trimer', trimer);
 
   return {
     markdownTemplateEngine: 'njk',
