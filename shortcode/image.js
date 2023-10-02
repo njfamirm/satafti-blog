@@ -1,7 +1,10 @@
 const imagePlugin = require('@11ty/eleventy-img');
 
 async function image(src, alt = '') {
-  let metadata = await imagePlugin('assets' + src, {
+  // support remote img
+  src.startsWith('/') ? (src = './assets/' + src) : src;
+
+  let metadata = await imagePlugin(src, {
     hashLength: 8,
     urlPath: '/img/',
     outputDir: 'dist/img',
