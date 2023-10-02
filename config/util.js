@@ -20,7 +20,7 @@ function slugify(string) {
 }
 
 function normalizeKeyword(keyword) {
-  if (!keyword) return [];
+  if (!keyword || keyword.length === 0) return [];
   let keywordList = keyword;
 
   if (typeof keyword === 'string') {
