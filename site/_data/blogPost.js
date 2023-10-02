@@ -7,7 +7,7 @@ const url = cmsDomain + '/api/blog-posts?populate=*';
 async function list() {
   const response = await fetch(url, {
     directory: '.cache',
-    duration: '1s',
+    duration: '1h',
     type: 'json',
     fetchOptions: {
       headers: {
