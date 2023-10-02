@@ -10,6 +10,7 @@ __metadata:
   resolution: "12fy-blog@workspace:."
   dependencies:
     "@11ty/eleventy": ^2.0.1
+    "@11ty/eleventy-fetch": ^4.0.0
     "@11ty/eleventy-img": ^3.1.0
     "@11ty/eleventy-plugin-directory-output": ^1.0.1
     "@11ty/eleventy-plugin-rss": ^1.2.0
@@ -78,6 +79,18 @@ __metadata:
     node-fetch: ^2.6.7
     p-queue: ^6.6.2
   checksum: ad18383c83855e1aaa3ddb37662839941e48f316a5480ee2a338e6a6e511b1ad84fb75caa5a6b9b7f7b1c1d309668e53d0caf5ac7a71ea550b0cd6c452be9e91
+  languageName: node
+  linkType: hard
+
+"@11ty/eleventy-fetch@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@11ty/eleventy-fetch@npm:4.0.0"
+  dependencies:
+    debug: ^4.3.4
+    flat-cache: ^3.0.4
+    node-fetch: ^2.6.7
+    p-queue: ^6.6.2
+  checksum: 7fb500db66afca621d97b5c79a144f82fb2449f386018713e63b8dc2609f85e59bad8c257c9ebdc80ca7309b99774e0a811d9ba74466fc2471e3230981415324
   languageName: node
   linkType: hard
 
