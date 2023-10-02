@@ -1,13 +1,20 @@
 const imagePlugin = require('@11ty/eleventy-img');
 
+const imageOptions = {
+  hashLength: 8,
+  urlPath: '/img/',
+  outputDir: 'dist/img',
+  widths: ['auto'],
+  formats: ['avif', 'webp', 'jpeg'],
+};
+
 async function image(src, alt = '') {
-  let metadata = await imagePlugin('assets' + src, {
-    hashLength: 8,
-    urlPath: '/img/',
-    outputDir: 'dist/img',
-    widths: ['auto'],
-    formats: ['avif', 'webp', 'jpeg'],
-  });
+  if (!imagePlugin.Util.isRemoteUrl(src)) {
+    src = './assets/' + src;
+  }
+
+  const metadata = await imagePlugin(src, imageOptions);
+
   let imageAttributes = {
     alt,
     loading: 'lazy',
@@ -16,4 +23,4 @@ async function image(src, alt = '') {
   return imagePlugin.generateHTML(metadata, imageAttributes);
 }
 
-module.exports = {image};
+module.exports = {image, imageOptions};
