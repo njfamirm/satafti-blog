@@ -91,6 +91,7 @@ jobs:
           build-args: |
             siteUrl=${{ matrix.siteUrl }}
             noIndex=${{ matrix.noIndex }}
+            cmsApiToken=${{ secrets.cmsApiToken }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
