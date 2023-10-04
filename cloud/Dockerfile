@@ -5,12 +5,14 @@ FROM docker.io/library/node:${NODE_VERSION}-alpine as builder
 
 ARG siteUrl=/
 ARG noIndex=0
+ARG cmsApiToken
 
 WORKDIR /app
 
 ENV MY_ENVIRONMENT production
 ENV siteUrl $siteUrl
 ENV noIndex $noIndex
+ENV cmsApiToken $cmsApiToken
 
 RUN apk add --no-cache git
 
